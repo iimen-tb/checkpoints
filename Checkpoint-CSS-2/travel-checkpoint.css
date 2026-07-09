@@ -1,0 +1,286 @@
+:root {
+    --color-deep: #0e3a4a;
+    --color-ocean: #146c7d;
+    --color-sun: #f0a04b;
+    --color-sand: #fff5e8;
+    --color-cream: #fffdf8;
+    --color-muted: #617985;
+    --color-border: rgba(14, 58, 74, 0.12);
+    --shadow-soft: 0 20px 45px rgba(10, 42, 54, 0.12);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Urbanist", sans-serif;
+    color: var(--color-deep);
+    background:
+        radial-gradient(circle at top left, rgba(240, 160, 75, 0.14), transparent 30%),
+        linear-gradient(180deg, #f7fbfc 0%, #edf6f8 100%);
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: "Cormorant Garamond", serif;
+}
+
+section[id],
+header[id] {
+    scroll-margin-top: 88px;
+}
+
+.travel-navbar {
+    background: rgba(10, 49, 62, 0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.travel-navbar .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 0.9rem;
+    padding: 0.45rem 0.7rem;
+}
+
+.travel-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 160, 75, 0.2);
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.brand-mark {
+    width: 2.35rem;
+    height: 2.35rem;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-sun), #ffcb7f);
+    color: var(--color-deep);
+    font-size: 1rem;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.82);
+    font-weight: 600;
+    padding-left: 0.9rem !important;
+    padding-right: 0.9rem !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #fff;
+}
+
+.hero-section {
+    min-height: 100vh;
+    padding: 7rem 0 5rem;
+    position: relative;
+    background:
+        linear-gradient(rgba(8, 39, 51, 0.5), rgba(8, 39, 51, 0.6)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-kicker,
+.section-kicker {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #ffd89e;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    color: #fff;
+    line-height: 0.95;
+    margin-bottom: 1rem;
+}
+
+.hero-copy {
+    max-width: 40rem;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 1.08rem;
+}
+
+.btn-sunrise {
+    background: linear-gradient(135deg, var(--color-sun), #ffc476);
+    color: var(--color-deep);
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 12px 30px rgba(240, 160, 75, 0.28);
+}
+
+.btn-sunrise:hover,
+.btn-sunrise:focus {
+    background: linear-gradient(135deg, #ffb862, #ffd190);
+    color: var(--color-deep);
+}
+
+.btn-outline-sunrise {
+    border: 1px solid rgba(20, 108, 125, 0.22);
+    color: var(--color-ocean);
+    font-weight: 700;
+}
+
+.btn-outline-sunrise:hover,
+.btn-outline-sunrise:focus {
+    background: var(--color-ocean);
+    border-color: var(--color-ocean);
+    color: #fff;
+}
+
+.section-space {
+    padding: 5.5rem 0;
+}
+
+.section-soft {
+    background:
+        linear-gradient(180deg, rgba(255, 245, 232, 0.68), rgba(255, 255, 255, 0.96));
+}
+
+.section-heading {
+    max-width: 42rem;
+    margin: 0 auto 3rem;
+}
+
+.section-heading h2 {
+    font-size: clamp(2.1rem, 4vw, 3.5rem);
+    margin-bottom: 0.85rem;
+}
+
+.section-heading p {
+    color: var(--color-muted);
+    margin-bottom: 0;
+}
+
+.destination-card,
+.contact-shell,
+.travel-accordion .accordion-item {
+    border-radius: 1.4rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.destination-card {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.96);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 55px rgba(10, 42, 54, 0.18);
+}
+
+.destination-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.destination-card .card-title {
+    color: var(--color-deep);
+    font-size: 1.8rem;
+}
+
+.destination-card .card-text {
+    color: var(--color-muted);
+}
+
+.travel-accordion .accordion-item {
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.94);
+}
+
+.travel-accordion .accordion-button {
+    background: #fff;
+    color: var(--color-deep);
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.travel-accordion .accordion-button:not(.collapsed) {
+    background: rgba(20, 108, 125, 0.08);
+    color: var(--color-deep);
+}
+
+.travel-accordion .accordion-body {
+    color: var(--color-muted);
+    line-height: 1.7;
+}
+
+.tour-link {
+    display: inline-block;
+    margin-left: 0.45rem;
+    font-weight: 700;
+    color: var(--color-ocean);
+    text-decoration: none;
+}
+
+.tour-link:hover,
+.tour-link:focus {
+    color: var(--color-deep);
+}
+
+.contact-shell {
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--color-border);
+}
+
+.form-label {
+    font-weight: 700;
+    color: var(--color-deep);
+}
+
+.form-control,
+.form-select {
+    min-height: 3.2rem;
+    border-radius: 0.95rem;
+    border: 1px solid rgba(14, 58, 74, 0.14);
+    padding-left: 1rem;
+}
+
+textarea.form-control {
+    min-height: 9rem;
+    resize: vertical;
+    padding-top: 0.85rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: rgba(20, 108, 125, 0.38);
+    box-shadow: 0 0 0 0.25rem rgba(20, 108, 125, 0.12);
+}
+
+.site-footer {
+    padding: 2rem 0;
+    background: #0a313e;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    color: #fff;
+}

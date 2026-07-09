@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lily+Script+One&family=Playwrite+IE:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="restaurant-page">
+    <header>
+
+        <!-- Navbare Section -->
+
+        <nav class="navbar navbar-expand-lg fixed-top site-nav nav-style" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                    <span class="lily-font">Quibezz</span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero section  -->
+
+        <section id="home" class="hero-section d-flex align-items-center">
+            <div class="container position-relative">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <span class="hero-kicker text-uppercase">A warm table, a bold flavor</span>
+                        <h1 class="display-3 hero-title">Taste the art of modern dining.</h1>
+                        <p class="lead hero-copy mx-auto">
+                            Crafted plates, glowing ambiance, and unforgettable evenings inspired by global comfort
+                            food.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a href="#menu" class="btn btn-brand btn-lg px-4">Explore Menu</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg px-4">Book a Table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu section  -->
+
+        <section id="menu" class="section-spacing">
+            <div class="container">
+                <div class="row justify-content-between align-items-end g-4 mb-5">
+                    <div class="col-lg-7">
+                        <span class="section-kicker">Signature Menu</span>
+                        <h2 class="section-title">A grid of our most-loved dishes</h2>
+                        <p class="section-copy mb-0">
+                            Built with Bootstrap cards and responsive columns so the menu adapts beautifully from phone
+                            to desktop.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <span class="menu-note">Freshly plated every day</span>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                    <div class="col">
+                        <article class="card menu-card h-100 border-0">
+                            <img src="Resto-images/Rectangle 8.svg" class="card-img-top menu-card-image"
+                                alt="Signature grilled platter">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                    <h3 class="h4 card-title mb-0">Firewood Platter</h3>
+                                    <span class="price-tag">$24</span>
+                                </div>
+                                <p class="card-text mb-0">
+                                    Charred vegetables, herb rice, and chef-selected cuts finished with a smoky glaze.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card menu-card h-100 border-0">
+                            <img src="Resto-images/Rectangle 9.svg" class="card-img-top menu-card-image"
+                                alt="Artfully plated seafood dish">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                    <h3 class="h4 card-title mb-0">Sea Salt Catch</h3>
+                                    <span class="price-tag">$28</span>
+                                </div>
+                                <p class="card-text mb-0">
+                                    Pan-seared seafood with citrus butter, seasonal greens, and a delicate pepper
+                                    finish.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card menu-card h-100 border-0">
+                            <img src="Resto-images/Rectangle 6.svg" class="card-img-top menu-card-image"
+                                alt="Chef special plated dinner">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                                    <h3 class="h4 card-title mb-0">Saffron House Special</h3>
+                                    <span class="price-tag">$31</span>
+                                </div>
+                                <p class="card-text mb-0">
+                                    Our signature dinner course with layered textures, rich sauces, and a bright finish.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+
+        <section id="about" class="section-spacing section-dark">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <div class="about-image-wrap">
+                            <img src="Resto-images/Rectangle 20.png" class="img-fluid about-image"
+                                alt="Restaurant food and dining atmosphere">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <span class="section-kicker">About Us</span>
+                        <h2 class="section-title">A fictional restaurant built to show Bootstrap in action</h2>
+                        <p class="section-copy">
+                            Saffron Table is imagined as a contemporary restaurant where elegant plating meets a relaxed
+                            social atmosphere. This section uses Bootstrap's grid system to create a clean two-column
+                            layout with an image on one side and content on the other.
+                        </p>
+                        <p class="section-copy">
+                            We focus on bold ingredients, warm lighting, and dishes designed to feel both premium and
+                            welcoming. On smaller screens, the layout stacks naturally so the experience stays readable
+                            and balanced.
+                        </p>
+                        <div class="row g-3 mt-2">
+                            <div class="col-sm-6">
+                                <div class="info-chip">Fresh seasonal ingredients</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="info-chip">Responsive Bootstrap layout</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="info-chip">Elegant dining atmosphere</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="info-chip">Designed for mobile and desktop</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section  -->
+
+        <section id="contact" class="section-spacing">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <span class="section-kicker">Contact</span>
+                        <h2 class="section-title">Reserve your next dinner</h2>
+                        <p class="section-copy">
+                            Use the form to send your name, email, and message. The layout is split with Bootstrap grid
+                            columns for a clean checkpoint-ready contact section.
+                        </p>
+
+                        <div class="contact-card">
+                            <div class="contact-line">
+                                <i class="bi bi-geo-alt"></i>
+                                <span>21 Lantern Street, Flavor City</span>
+                            </div>
+                            <div class="contact-line">
+                                <i class="bi bi-telephone"></i>
+                                <span>+234 555 0147</span>
+                            </div>
+                            <div class="contact-line">
+                                <i class="bi bi-clock"></i>
+                                <span>Open daily, 12:00 PM to 11:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <form class="contact-form p-4 p-md-5">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="6"
+                                        placeholder="Tell us about your reservation or event"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-brand btn-lg px-4">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer  -->
+
+    <footer class="site-footer py-4">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2026 Quibezz. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 footer-icons">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

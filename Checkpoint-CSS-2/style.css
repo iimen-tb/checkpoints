@@ -1,0 +1,297 @@
+:root {
+    --color-primary: #c96a2b;
+    --color-primary-soft: #f1b27d;
+    --color-bg-dark: #140f0c;
+    --color-bg-deep: #221813;
+    --color-bg-card: rgba(255, 248, 241, 0.08);
+    --color-surface: #f7efe5;
+    --color-text-light: #fff6ef;
+    --color-text-muted: #d8c1ae;
+    --color-text-dark: #241813;
+    --color-accent-gold: #f5c87a;
+    --color-border: rgba(255, 241, 228, 0.14);
+    --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.25);
+    --section-padding: clamp(4.5rem, 9vw, 7rem);
+}
+
+body.restaurant-page {
+    font-family: "DM Sans", sans-serif;
+    color: var(--color-text-light);
+    background:
+        radial-gradient(circle at top left, rgba(201, 106, 43, 0.2), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(245, 200, 122, 0.12), transparent 20%),
+        linear-gradient(180deg, #1a120e 0%, #100c09 100%);
+    overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: "Lily Script One", cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+section[id],
+header[id] {
+    scroll-margin-top: 88px;
+}
+
+.section-spacing {
+    padding: var(--section-padding) 0;
+}
+
+.section-dark {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)),
+        linear-gradient(135deg, rgba(201, 106, 43, 0.08), transparent 40%);
+}
+
+.site-nav {
+    background: rgba(20, 15, 12, 0.72);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.site-nav .navbar-toggler {
+    padding: 0.45rem 0.7rem;
+    border: 1px solid rgba(255, 241, 228, 0.2);
+    border-radius: 0.85rem;
+}
+
+.site-nav .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(201, 106, 43, 0.2);
+}
+
+.navbar-brand {
+    color: var(--color-text-light);
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: var(--color-text-light);
+}
+
+.brand-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 2.15rem;
+    height: 2.15rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent-gold));
+    color: var(--color-bg-dark);
+    font-family: "Prata", serif;
+    font-size: 1rem;
+}
+
+.navbar-brand:hover .brand-mark,
+.navbar-brand:focus .brand-mark {
+    color: var(--color-bg-dark);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent-gold));
+}
+
+.nav-link {
+    color: rgba(255, 246, 239, 0.78);
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-text-light);
+}
+
+.hero-section {
+    min-height: 100vh;
+    padding: 7rem 0 4rem;
+    position: relative;
+    background:
+        linear-gradient(rgba(12, 9, 7, 0.45), rgba(12, 9, 7, 0.7)),
+        url("Resto-images/Rectangle 6.svg") center/cover no-repeat,
+        url("Resto-images/Rectangle 20.png") center/cover no-repeat;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 9rem;
+    background: linear-gradient(180deg, transparent, #100c09);
+}
+
+.hero-kicker,
+.section-kicker,
+.menu-note {
+    display: inline-block;
+    color: var(--color-accent-gold);
+    letter-spacing: 0.14em;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.hero-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.08;
+}
+
+.hero-copy,
+.section-copy {
+    color: var(--color-text-muted);
+    max-width: 42rem;
+    font-size: 1.05rem;
+}
+
+.section-title {
+    margin: 0.75rem 0 1rem;
+    line-height: 1.2;
+}
+
+.btn-brand {
+    background: linear-gradient(135deg, var(--color-primary), #dd8a48);
+    border: none;
+    color: #fff7f1;
+    box-shadow: 0 14px 30px rgba(201, 106, 43, 0.28);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    color: #fff7f1;
+    background: linear-gradient(135deg, #d77836, #e79655);
+}
+
+.menu-card,
+.contact-form,
+.contact-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.menu-card {
+    overflow: hidden;
+}
+
+.menu-card-image {
+    height: 260px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--color-text-light);
+}
+
+.card-text {
+    color: var(--color-text-muted);
+}
+
+.price-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(245, 200, 122, 0.16);
+    color: var(--color-accent-gold);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.about-image-wrap {
+    position: relative;
+    padding: 1rem;
+    border-radius: 1.75rem;
+    background: linear-gradient(145deg, rgba(245, 200, 122, 0.18), rgba(201, 106, 43, 0.08));
+    box-shadow: var(--shadow-soft);
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 1.25rem;
+    min-height: 420px;
+    object-fit: cover;
+}
+
+.info-chip {
+    padding: 0.95rem 1rem;
+    border-radius: 999px;
+    background: rgba(255, 248, 241, 0.05);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-light);
+    text-align: center;
+    font-weight: 500;
+}
+
+.contact-card {
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    color: var(--color-text-light);
+}
+
+.contact-line+.contact-line {
+    margin-top: 1rem;
+}
+
+.contact-line i,
+.footer-icons i {
+    color: var(--color-accent-gold);
+}
+
+.form-label {
+    color: var(--color-text-light);
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 241, 228, 0.16);
+    background: rgba(255, 248, 241, 0.06);
+    color: var(--color-text-light);
+    padding: 0.9rem 1rem;
+}
+
+.form-control::placeholder {
+    color: rgba(216, 193, 174, 0.72);
+}
+
+.form-control:focus {
+    background: rgba(255, 248, 241, 0.08);
+    color: var(--color-text-light);
+    border-color: rgba(245, 200, 122, 0.55);
+    box-shadow: 0 0 0 0.25rem rgba(201, 106, 43, 0.12);
+}
+
+.site-footer {
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.footer-icons a {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255, 248, 241, 0.06);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-light);
+}
+
+.footer-icons a:hover,
+.footer-icons a:focus {
+    color: var(--color-text-light);
+    background: rgba(201, 106, 43, 0.18);
+}

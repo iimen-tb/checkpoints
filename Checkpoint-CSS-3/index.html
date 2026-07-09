@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buver | Store Landing Page</title>
+  <meta
+    name="description"
+    content="A responsive fashion store landing page with a cinematic hero section, curated products, and a polished footer."
+  >
+  <!-- Optional web fonts with graceful fallbacks for offline viewing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main header with navigation and utility actions -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#home" aria-label="Buver homepage">Buver</a>
+
+      <div class="header-panel">
+        <div class="header-panel-inner">
+          <nav class="site-nav site-nav-desktop" aria-label="Primary">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="header-tools header-tools-desktop" aria-label="Quick actions">
+            <a href="#collection" aria-label="Search products">
+              <span class="tool-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <circle cx="11" cy="11" r="6.5"></circle>
+                  <path d="M16 16L21 21"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#about" aria-label="Saved items">
+              <span class="tool-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M12 20.4L4.9 13.5C3 11.7 3 8.7 4.9 6.9C6.8 5.1 9.7 5.1 11.6 6.9L12 7.3L12.4 6.9C14.3 5.1 17.2 5.1 19.1 6.9C21 8.7 21 11.7 19.1 13.5L12 20.4Z"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#contact" aria-label="Shopping bag">
+              <span class="tool-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M6 8H18L17 20H7L6 8Z"></path>
+                  <path d="M9 9V7.6C9 5.6 10.4 4 12 4C13.6 4 15 5.6 15 7.6V9"></path>
+                </svg>
+              </span>
+              <span class="cart-count">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compact mobile navigation -->
+      <details class="mobile-menu">
+        <summary class="mobile-menu-button" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+
+        <div class="mobile-menu-panel">
+          <nav class="mobile-nav" aria-label="Mobile primary">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="mobile-tools" aria-label="Mobile quick actions">
+            <a href="#collection" aria-label="Search products">
+              <span class="tool-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <circle cx="11" cy="11" r="6.5"></circle>
+                  <path d="M16 16L21 21"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#about" aria-label="Saved items">
+              <span class="tool-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M12 20.4L4.9 13.5C3 11.7 3 8.7 4.9 6.9C6.8 5.1 9.7 5.1 11.6 6.9L12 7.3L12.4 6.9C14.3 5.1 17.2 5.1 19.1 6.9C21 8.7 21 11.7 19.1 13.5L12 20.4Z"></path>
+                </svg>
+              </span>
+            </a>
+            <a href="#contact" aria-label="Shopping bag">
+              <span class="tool-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M6 8H18L17 20H7L6 8Z"></path>
+                  <path d="M9 9V7.6C9 5.6 10.4 4 12 4C13.6 4 15 5.6 15 7.6V9"></path>
+                </svg>
+              </span>
+              <span class="cart-count">2</span>
+            </a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero section inspired by the provided visual reference -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">GLO EDITION</p>
+          <h1>Daily Styles<br>For Every Mood</h1>
+          <p class="hero-text">
+            Curated wardrobe staples in calm neutrals, modern tailoring, and soft textures
+            that make everyday dressing feel elevated.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#collection">Shop Now</a>
+            <a class="button button-secondary" href="#about">View Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured products section -->
+    <section class="products" id="collection">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark">New Season Edit</p>
+          <h2>Soft tones, clean lines, and effortless polish.</h2>
+          <p class="section-text">
+            Explore the pieces behind our signature storefront look. Each card includes
+            a product image, a short description, and a direct call to action.
+          </p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/Lundmy Blazer.jpg" alt="Ivory blazer and tailored set">
+            <div class="product-content">
+              <h3>Lundmy Blazer</h3>
+              <p>Soft ivory tailoring with polished buttons and a relaxed silhouette for elevated daytime dressing.</p>
+              <div class="product-meta">
+                <span class="price">$720</span>
+                <a class="card-button" href="#contact">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/hill.jpg" alt="Elegant pointed slingback heels">
+            <div class="product-content">
+              <h3>Golden Hour Heels</h3>
+              <p>Pointed slingbacks with metallic accents that bring a softer, dressier finish to the collection.</p>
+              <div class="product-meta">
+                <span class="price">$455</span>
+                <a class="card-button" href="#contact">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/Restchphild Coat.jpg" alt="Taupe coat with a minimal high-neck cut">
+            <div class="product-content">
+              <h3>Restchphild Coat</h3>
+              <p>Minimal outerwear in a muted taupe finish, designed for clean layering and cool-weather ease.</p>
+              <div class="product-meta">
+                <span class="price">$455</span>
+                <a class="card-button" href="#contact">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/robe.jpg" alt="Elegant dark gown">
+            <div class="product-content">
+              <h3>Noir Grace Gown</h3>
+              <p>Refined eveningwear with sculpted volume and a dramatic silhouette that still feels timeless.</p>
+              <div class="product-meta">
+                <span class="price">$810</span>
+                <a class="card-button" href="#contact">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/Oakline Jacket.jpg" alt="Oversized brown fashion jacket">
+            <div class="product-content">
+              <h3>Oakline Jacket</h3>
+              <p>Statement outerwear with sculptural volume and a rich espresso tone that feels editorial and modern.</p>
+              <div class="product-meta">
+                <span class="price">$640</span>
+                <a class="card-button" href="#contact">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/Moonbay Dress.jpg" alt="Sand-colored wrap shirt dress">
+            <div class="product-content">
+              <h3>Moonbay Dress</h3>
+              <p>Wrap-inspired shirt dress with gentle volume and a warm neutral tone for effortless versatility.</p>
+              <div class="product-meta">
+                <span class="price">$318</span>
+                <a class="card-button" href="#contact">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/Veilstep Boots.jpg" alt="Cream combat boots">
+            <div class="product-content">
+              <h3>Veilstep Boots</h3>
+              <p>Chunky-soled boots in a soft cream finish that balance utility styling with a premium look.</p>
+              <div class="product-meta">
+                <span class="price">$228</span>
+                <a class="card-button" href="#contact">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/Merrow Loafers.jpg" alt="Black leather loafers">
+            <div class="product-content">
+              <h3>Merrow Loafers</h3>
+              <p>Classic loafers with a solid tread sole, tailored for smart everyday outfits and sharper layering.</p>
+              <div class="product-meta">
+                <span class="price">$390</span>
+                <a class="card-button" href="#contact">Shop Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supporting content to make the landing page feel complete -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow eyebrow-dark">Why Buver</p>
+          <h2>Designed to feel editorial, built to shop with ease.</h2>
+          <p class="section-text">
+            The layout borrows from luxury fashion campaigns: spacious composition, soft
+            neutral colors, and typography that balances confidence with calm. The result
+            feels premium without losing usability on smaller screens.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div>
+            <span class="info-label">Free styling</span>
+            <p>Book a digital wardrobe consultation for curated outfit recommendations.</p>
+          </div>
+          <div>
+            <span class="info-label">Fast delivery</span>
+            <p>Next-day dispatch on featured items with easy returns across every order.</p>
+          </div>
+          <div>
+            <span class="info-label">Member perks</span>
+            <p>Earn loyalty rewards, early access drops, and exclusive collection previews.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with quick links and a short sign-off -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="#home">Buver</a>
+        <p class="footer-text">
+          A modern online store landing page designed to feel cinematic, responsive, and easy to browse.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <a href="#collection">Best Sellers</a>
+        <a href="#about">Our Story</a>
+        <a href="#contact">Shipping Info</a>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <a href="mailto:hello@buver.store">hello@buver.store</a>
+        <a href="tel:+2340000000000">+234 000 000 0000</a>
+        <span>Lagos &middot; London &middot; Online</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
