@@ -1,0 +1,6 @@
+Sentence Analyzer AlgorithmThis repository contains a solution for a fundamental algorithmic checkpoint.
+The goal is to process a sentence character by character to extract key linguistic metrics without using built-in string splitting functions.
+📝 ObjectiveThe algorithm reads an input sentence that must end with a period (.).
+It processes the input one character at a time to calculate:The length of the sentence: Total number of characters (including the period).
+The number of words: Based on the assumption that words are separated by a single space.The number of vowels: Counting occurrences of 'a', 'e', 'i', 'o', 'u' (case-insensitive).
+⚙️ Logic & ConstraintsTo ensure the algorithm is efficient and follows the checkpoint requirements, the following logic is applied:Character-by-Character Processing: The system uses a loop that terminates only when the . character is encountered.Counters: Three distinct variables are initialized to zero to track length, words, and vowels.Word Counting: A word is counted whenever a space is encountered, plus one final count for the last word before the period.Vowel Check: Each character is compared against a set of vowels $\{a, e, i, o, u, A, E, I, O, U\}$.

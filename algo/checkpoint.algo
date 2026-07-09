@@ -1,0 +1,40 @@
+ALGORITHM reads_sentence
+VAR
+   chaine : STRING
+   i:INTEGER := 0
+   j:INTEGER := 0
+   k:INTEGER := 0
+   nb_char :INTEGER := 0
+   nb_words:INTEGER := 1
+   nb_vowels:INTEGER := 0
+BEGIN
+    Write("Donner moi une phrase que se termine par un point")
+    Read(chaine)
+    WHILE (chaine[i] <> ".") DO
+     nb_char= nb_char + 1
+     i = i + 1 
+    END_WHILE
+
+    FOR j FROM 0 TO nb_char STEP 1  DO
+        IF (chaine[j] = " ") THEN
+            nb_words = nb_words + 1
+        END_IF
+    END_FOR
+
+    FOR k FROM 0 TO nb_char STEP 1  DO
+        IF (chaine[k].toLowerCase() = "e" OR 
+            chaine[k].toLowerCase() = "a" OR 
+            chaine[k].toLowerCase()=  "u" OR 
+            chaine[k].toLowerCase()=  "i" OR 
+            chaine[k].toLowerCase() = "y" OR 
+            chaine[k].toLowerCase()=  "o") THEN
+            nb_vowels = nb_vowels + 1
+        END_IF
+    END_FOR
+
+    Write("Nombre de Caaractere :" , nb_char)
+    Write("Nombre de mots :" , nb_words)
+    Write("Nombre de voyelles :" , nb_vowels)
+
+
+END
